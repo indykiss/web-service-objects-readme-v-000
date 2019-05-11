@@ -1,3 +1,4 @@
-class FoursquareService 
 
-end 
+class FoursquareService
+
+end
