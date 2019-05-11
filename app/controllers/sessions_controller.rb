@@ -19,4 +19,9 @@ class SessionsController < ApplicationController
     body["access_token"]
   end
 
+  def friends
+    foursquare = FoursquareService.new
+    @friends = foursquare.friends(session[:token])
+  end
+
 end
